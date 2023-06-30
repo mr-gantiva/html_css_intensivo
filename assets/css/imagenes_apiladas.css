@@ -2,4 +2,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  font-family: "formula1-display-bold-bold", sans-serif;
+}
+
+.img-container {
+  margin: 100px auto;
+  width: 500px;
+  display: flex;
+}
+.img-container .imagen {
+  position: relative;
+  margin-right: -20px;
+  display: flex;
+  flex-direction: column;
+}
+.img-container .imagen:hover .nombre {
+  display: flex;
+}
+.img-container .imagen img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.img-container .imagen .nombre {
+  position: absolute;
+  top: -55px;
+  background-color: rgba(96, 96, 96, 0.29);
+  border-radius: 2px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18.3px);
+  -webkit-backdrop-filter: blur(18.3px);
+  border: 1px solid rgba(96, 96, 96, 0.3);
+  /* From https://css.glass */
+  background: rgba(96, 96, 96, 0.29);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18.3px);
+  -webkit-backdrop-filter: blur(18.3px);
+  border: 1px solid rgba(96, 96, 96, 0.3);
+  color: #fafaf5;
+  text-align: center;
+  display: none;
+  min-width: 100px;
+  width: 150px;
 }/*# sourceMappingURL=imagenes_apiladas.css.map */
