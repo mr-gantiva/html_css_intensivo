@@ -19,6 +19,7 @@ body {
         flex-direction: column;
         &:hover .nombre{
             display: flex;
+            justify-content: center;
         }
         img {
             width: 100px;
@@ -45,7 +46,7 @@ body {
             text-align: center;
             display: none;
             min-width: 100px;
-            width: 150px;
+            width: 100px;
             
         }
     }
