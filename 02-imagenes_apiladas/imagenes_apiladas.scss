@@ -9,26 +9,35 @@ body {
 }
 
 .img-container {
-    margin: 100px auto;
     /*
     width: 600px;*/
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
     .imagen {
         position: relative;
-        margin-right: -20px;
+        margin-right: -40px;
         display: flex;
         flex-direction: column;
         &:hover .nombre{
             display: flex;
             justify-content: center;
+            transform: translateY(-20px);
         }
         img {
             width: 200px;
             height: 200px;
             object-fit: cover;
+            transition: transform 0.32s ease-in-out;
+            &:hover {
+                transform: translateY(-20px);
+                cursor: pointer;
+            }
         }
         .nombre {
+            display: flex;
+            align-items: center;
             position: absolute;
             top: -55px;
             background-color: rgba(96, 96, 96, 0.29);
@@ -48,7 +57,7 @@ body {
             border: 1px solid rgba(96, 96, 96, 0.3);*/
             color: #fafaf5;
             display: none;
-            min-width: 100px;
+            min-width: 200px;
             width: 150px;
             padding: 10px;
             &::before {
@@ -56,13 +65,17 @@ body {
                 position: absolute;
                 width: 1px;
                 height: 1px;
-                left: 20%;
+                left: 30%;
                 bottom: -21px;
                 border-top: 10px solid rgba(96, 96, 96, 0.3);
                 border-left: 10px solid transparent;
                 border-right: 10px solid transparent;
                 border-bottom: 10px solid transparent;
             }   
+            .img-casco {
+                width: 30px;
+                height: 30px;
+            }
             .text {
                 display: inline-block;
                 text-overflow: ellipsis;
@@ -73,5 +86,13 @@ body {
                 text-align: center;
             }         
         }
+    }
+}
+
+
+@media (max-width: 680px) {
+    .img-container {
+        flex-direction: column;
+        height: 190vh;
     }
 }
