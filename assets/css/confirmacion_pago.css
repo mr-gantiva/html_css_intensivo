@@ -56,24 +56,31 @@ main .ventana-container .btn-container {
   gap: 10px;
 }
 main .ventana-container .btn-container button {
-  width: 120px;
+  min-width: 120px;
   border: none;
   background: none;
   padding: 20px;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 14px;
 }
 main .ventana-container .btn-container .btn-descargar {
-  background: blue;
+  background: #029be1;
   color: #fafaf5;
+}
+main .ventana-container .btn-container .btn-descargar:hover {
+  background-color: #0280de;
 }
 main .ventana-container .btn-container .btn-volver {
   border: 1px solid #ccc;
 }
+main .ventana-container .btn-container .btn-volver:hover {
+  background-color: #eee;
+}
 
-@media (max-width: 680px) {
+@media (max-width: 768px) {
   main .ventana-container {
-    width: 300px;
+    width: 90%;
     height: 55%;
   }
   main .ventana-container .text-container {
