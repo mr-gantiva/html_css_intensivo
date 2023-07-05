@@ -1,0 +1,81 @@
+:root {
+  --color1: #f8b78b;
+  --color2: #fcb173;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: var(--color1);
+  background-image: url(https://res.cloudinary.com/kenobi22v/image/upload/v1688574240/proyectos_udemy/fondoTop_lpozss.svg), url(https://res.cloudinary.com/kenobi22v/image/upload/v1688574240/proyectos_udemy/fondoBotton_iaxhnk.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fafaf5;
+  width: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.6);
+  transition: all 0.9s;
+}
+.card-header {
+  width: 100%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--color2);
+}
+.card-body-content {
+  border: 5px solid #f67c55;
+  border-radius: 50%;
+  background-color: #fcd3c6;
+  box-shadow: 0px -10px 20px #f67c55;
+  margin-top: -58px;
+  transition: all 0.9s;
+}
+.card-body-content-img {
+  padding: 15px;
+}
+.card-body-content:hover {
+  transform: scale(1.1);
+}
+.card-body-title {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+.card-body-title span {
+  color: var(--color2);
+}
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+}
+.card-footer-poder {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  transition: all 0.5s;
+}
+.card-footer-poder img:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=card_pokemon.css.map */
