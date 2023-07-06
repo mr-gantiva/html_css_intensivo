@@ -39,8 +39,8 @@ body {
   margin-top: 2rem 0;
   padding: 5rem;
   padding-left: 19rem;
-  /*
-  justify-content: space-between;*/
+  padding-right: 18rem;
+  justify-content: space-between;
   align-items: center;
   z-index: 1000;
 }
