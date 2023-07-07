@@ -60,4 +60,13 @@ body .grid-container .card img:hover {
 body .grid-container .card H3 {
   color: #fafaf5;
   text-align: center;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  body .grid-container {
+    grid-template-columns: 30rem;
+  }
 }/*# sourceMappingURL=style.css.map */
