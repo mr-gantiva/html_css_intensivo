@@ -198,4 +198,30 @@ body {
     justify-content: center;
     padding-left: 0;
   }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main {
+    padding: 30px 20px;
+  }
+  .main header {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .main .content {
+    padding: 4rem;
+  }
+  .main .content .text h2 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .main .content .text p {
+    font-size: 1.8rem;
+  }
+  .main .content .content-image .subcontent-image img {
+    width: 400px;
+  }
+  .main footer {
+    margin-top: 2rem;
+    padding-left: 4rem;
+  }
 }/*# sourceMappingURL=landing_page.css.map */

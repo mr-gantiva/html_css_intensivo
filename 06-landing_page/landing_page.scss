@@ -231,3 +231,36 @@ body {
         }
     }
 }
+
+@media (min-width:769px) and  (max-width: 1024px) {
+    .main {
+        padding: 30px 20px;
+        header {
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+        .content {
+            padding: 4rem;
+            .text {
+                h2{
+                    font-size: 6rem;
+                    line-height: 6rem;
+                }
+                p{
+                    font-size: 1.8rem;
+                }
+            }
+            .content-image {
+                .subcontent-image {
+                    img {
+                        width: 400px;
+                    }
+                }
+            }
+        }
+        footer {
+            margin-top: 2rem;
+            padding-left: 4rem;
+        }
+    }
+}
