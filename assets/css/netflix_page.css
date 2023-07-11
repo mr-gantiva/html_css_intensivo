@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url("https://res.cloudinary.com/kenobi22v/image/upload/v1689024486/proyectos_udemy/tms_p5jknu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 40%;
+}
+body .main-container {
+  margin: 0 10rem;
+}
+body .main-container header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .main-container header .logo a {
+  transition: 0.5s;
+}
+body .main-container header ul {
+  display: flex;
+  gap: 20px;
+}
+body .main-container header ul li {
+  list-style: none;
+}
+body .main-container header ul li a {
+  text-decoration: none;
+  color: #fafaf5;
+  font-size: 2rem;
+}
+body .main-container header .search input {
+  border: 1px solid #fafaf5;
+  padding: 15px;
+  width: 320px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+body .banner-img {
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+}/*# sourceMappingURL=netflix_page.css.map */
