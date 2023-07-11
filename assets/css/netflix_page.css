@@ -49,12 +49,24 @@ body .main-container header ul li:hover {
   transform: scale(1.1);
   transition: 0.2s;
 }
+body .main-container header .search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fafaf5;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+body .main-container header .search .search-icon {
+  color: #fafaf5;
+  font-size: 2rem;
+}
 body .main-container header .search input {
   border: 1px solid #fafaf5;
   padding: 15px;
   width: 320px;
-  border-radius: 5px;
+  border: none;
   background-color: transparent;
+  font-size: 2rem;
 }
 body .main-container header .navigation-menu {
   color: #fafaf5;

@@ -46,12 +46,22 @@ body {
                 }
             }
             .search {
+                display: flex;
+                align-items: center;
+                border: 1px solid #fafaf5;
+                border-radius: 4px;
+                padding: 0 10px;
+                .search-icon {
+                    color: #fafaf5;
+                    font-size: 2rem;
+                }
                 input {
                     border: 1px solid #fafaf5;
                     padding: 15px;
                     width: 320px;
-                    border-radius: 5px;
+                    border: none;
                     background-color: transparent;
+                    font-size: 2rem;
                 }
             }
             .navigation-menu {
