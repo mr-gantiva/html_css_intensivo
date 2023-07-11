@@ -45,6 +45,9 @@ body .main-container header ul li a {
   color: #fafaf5;
   font-size: 2.2rem;
 }
+body .main-container header ul li a:hover {
+  color: red;
+}
 body .main-container header ul li:hover {
   transform: scale(1.1);
   transition: 0.2s;
@@ -61,12 +64,22 @@ body .main-container header .search .search-icon {
   font-size: 2rem;
 }
 body .main-container header .search input {
-  border: 1px solid #fafaf5;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 15px;
   width: 320px;
   border: none;
   background-color: transparent;
   font-size: 2rem;
+  outline: none;
+  caret-color: #fafaf5;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+body .main-container header .search input::-moz-placeholder {
+  color: #fafaf5;
+}
+body .main-container header .search input::placeholder {
+  color: #fafaf5;
 }
 body .main-container header .navigation-menu {
   color: #fafaf5;
@@ -99,6 +112,9 @@ body .banner-info .rated {
 body .banner-info span {
   color: rgba(204, 204, 204, 0.7);
 }
+body .banner-description {
+  width: 50%;
+}
 body .banner-description p {
   color: #fafaf5;
   font-size: 2rem;
@@ -127,9 +143,13 @@ body .banner-description-btn .btn-list {
   border-radius: 2px;
 }
 body .banner-description-btn .btn-list:hover {
-  background: #fafaf5;
-  color: #333;
+  background: red;
+  color: #fafaf5;
   transition: 0.5s;
+  border: none;
+}
+body .banner-description-trailer {
+  margin: 20px 0;
 }
 body .banner-description-trailer a {
   display: flex;
@@ -215,7 +235,10 @@ body .banner-description-trailer h3 {
   body .main-container .banner-info .rated {
     font-size: 1.2rem;
   }
-  body .main-container .banner-description p {
+  body .main-container .banner-description P {
     font-size: 1.8rem;
+  }
+  body .main-container .banner-description-btn a {
+    font-size: 1.6rem;
   }
 }/*# sourceMappingURL=netflix_page.css.map */

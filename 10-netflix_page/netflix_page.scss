@@ -38,6 +38,9 @@ body {
                         text-decoration: none;
                         color: #fafaf5;
                         font-size: 2.2rem;
+                        &:hover {
+                            color: red;
+                        }
                     }
                     &:hover {
                         transform: scale(1.1);
@@ -56,12 +59,18 @@ body {
                     font-size: 2rem;
                 }
                 input {
-                    border: 1px solid #fafaf5;
+                    border: 1px solid rgba(255,255,255, 0.5);
                     padding: 15px;
                     width: 320px;
                     border: none;
                     background-color: transparent;
                     font-size: 2rem;
+                    outline: none;
+                    caret-color: #fafaf5;
+                    backdrop-filter: blur(10px);
+                    &::placeholder {
+                        color: #fafaf5;
+                    }
                 }
             }
             .navigation-menu {
@@ -99,6 +108,7 @@ body {
             }
         }
         &-description {
+            width: 50%;
             p {
                 color: #fafaf5;
                 font-size: 2rem;
@@ -125,13 +135,15 @@ body {
                     border: 1px solid rgba(204, 204, 204, 0.7);
                     border-radius: 2px;
                     &:hover {
-                        background: #fafaf5;
-                        color: #333;
+                        background: red;
+                        color: #fafaf5;
                         transition: 0.5s;
+                        border: none;
                     }
                 }
             }   
             &-trailer {
+                margin: 20px 0;
                 a {
                     display: flex;
                     align-items: center;
@@ -235,8 +247,16 @@ body {
                     font-size: 1.2rem;
                 }
             }
-            .banner-description p {
-                font-size: 1.8rem;
+            .banner-description {
+                P {
+                    font-size: 1.8rem;
+                }
+                &-btn {
+                    a {
+                        font-size: 1.6rem;
+                    }
+                }
+
             }
         }
     }
