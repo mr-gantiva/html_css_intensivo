@@ -198,7 +198,7 @@ body .banner-description-trailer h3 {
   body .main-container header .navigation-menu {
     display: flex;
   }
-  body .main-container .search {
+  body .main-container header .search {
     display: none;
   }
   body .main-container .banner-title {
