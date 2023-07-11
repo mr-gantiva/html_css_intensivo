@@ -13,28 +13,29 @@ html {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("https://res.cloudinary.com/kenobi22v/image/upload/v1689024486/proyectos_udemy/tms_p5jknu.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 10% 40%;
 }
 body .main-container {
-  margin: 0 10rem;
+  margin: 0 15rem;
 }
 body .main-container header {
   width: 100%;
   height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 5rem;
 }
 body .main-container header .logo a {
   transition: 0.5s;
 }
 body .main-container header ul {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 body .main-container header ul li {
   list-style: none;
@@ -42,7 +43,11 @@ body .main-container header ul li {
 body .main-container header ul li a {
   text-decoration: none;
   color: #fafaf5;
-  font-size: 2rem;
+  font-size: 2.2rem;
+}
+body .main-container header ul li:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 body .main-container header .search input {
   border: 1px solid #fafaf5;
@@ -51,8 +56,154 @@ body .main-container header .search input {
   border-radius: 5px;
   background-color: transparent;
 }
-body .banner-img {
-  position: absolute;
-  top: -100px;
-  z-index: -1;
+body .main-container header .navigation-menu {
+  color: #fafaf5;
+  font-size: 4rem;
+  display: none;
+}
+body .banner-title {
+  margin-top: 12rem;
+}
+body .banner-title img {
+  width: 52%;
+}
+body .banner-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+body .banner-info p {
+  color: rgba(204, 204, 204, 0.7);
+}
+body .banner-info .rated {
+  color: #fafaf5;
+  background: red;
+  padding: 1px 5px;
+  font-size: 2.2rem;
+  border-radius: 2px;
+}
+body .banner-info span {
+  color: rgba(204, 204, 204, 0.7);
+}
+body .banner-description p {
+  color: #fafaf5;
+  font-size: 2rem;
+}
+body .banner-description-btn {
+  margin: 4rem 0;
+}
+body .banner-description-btn a {
+  color: #fafaf5;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 8px 20px;
+}
+body .banner-description-btn .btn-play {
+  background-color: rgb(199, 2, 2);
+  margin-right: 2rem;
+  border-radius: 2px;
+}
+body .banner-description-btn .btn-play:hover {
+  background-color: rgb(252, 5, 5);
+  transition: 0.2s;
+}
+body .banner-description-btn .btn-list {
+  border: 1px solid rgba(204, 204, 204, 0.7);
+  border-radius: 2px;
+}
+body .banner-description-btn .btn-list:hover {
+  background: #fafaf5;
+  color: #333;
+  transition: 0.5s;
+}
+body .banner-description-trailer a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+body .banner-description-trailer img {
+  margin-right: 2rem;
+}
+body .banner-description-trailer h3 {
+  color: #fafaf5;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body .main-container {
+    margin: 0 10rem;
+  }
+  body .main-container header ul li a {
+    font-size: 1.5rem;
+  }
+  body .main-container header .search input {
+    width: 220px;
+  }
+  body .banner-title {
+    margin-top: 6rem;
+  }
+  body .banner-info {
+    gap: 4px;
+    font-size: 1.4rem;
+  }
+  body .banner-info .rated {
+    font-size: 1.4rem;
+  }
+  body .banner-description {
+    width: 60%;
+  }
+  body .banner-description p {
+    font-size: 1.6rem;
+  }
+  body .banner-description-btn a {
+    font-size: 1.6rem;
+    padding: 6px 14px;
+  }
+  body .banner-description-trailer {
+    margin: 1rem 0;
+  }
+  body .banner-description-trailer img {
+    width: 40px;
+  }
+  body .banner-description-trailer h3 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  body .main-container {
+    margin: 0 4rem;
+  }
+  body .main-container header a img {
+    width: 60%;
+  }
+  body .main-container header ul {
+    display: none;
+  }
+  body .main-container header .navigation-menu {
+    display: flex;
+  }
+  body .main-container .search {
+    display: none;
+  }
+  body .main-container .banner-title {
+    width: 100%;
+  }
+  body .main-container .banner-title img {
+    width: 100%;
+  }
+  body .main-container .banner-info {
+    width: 100%;
+    gap: 6px;
+    font-size: 1.4rem;
+  }
+  body .main-container .banner-info .rated {
+    font-size: 1.2rem;
+  }
+  body .main-container .banner-description p {
+    font-size: 1.8rem;
+  }
 }/*# sourceMappingURL=netflix_page.css.map */
