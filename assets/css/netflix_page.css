@@ -17,7 +17,8 @@ body {
   background-image: url("https://res.cloudinary.com/kenobi22v/image/upload/v1689024486/proyectos_udemy/tms_p5jknu.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 10% 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body .main-container {
   margin: 0 15rem;
