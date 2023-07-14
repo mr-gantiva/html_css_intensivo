@@ -52,6 +52,8 @@ body .grid-container .card img {
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body .grid-container .card img:hover {
   transform: scale(1.1);
