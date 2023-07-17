@@ -189,7 +189,7 @@ section .box .container .form .olvido-password a {
 
 @media (min-width: 300px) and (max-width: 768px) {
   body {
-    margin: 0 20px;
+    background: #5c55e6;
   }
   section .color:nth-child(1) {
     width: 100%;

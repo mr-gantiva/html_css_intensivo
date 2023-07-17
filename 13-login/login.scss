@@ -181,9 +181,9 @@ section {
 }
 
 @media (min-width: 300px) and (max-width: 768px) {
-  body {
-    margin: 0 20px;
-  }
+    body {
+        background: #5c55e6;
+    }
   section {
     .color {
       &:nth-child(1) {
@@ -220,17 +220,17 @@ section {
       .container {
         width: 100%;
         .form {
-            .input-box {
-                display: flex;
-                justify-content: center;
-                input[type="submit"] {
-                    max-width: 100%;
-                  }
+          .input-box {
+            display: flex;
+            justify-content: center;
+            input[type="submit"] {
+              max-width: 100%;
             }
-            .olvido-password {
-                font-size: 11px;
-              }
           }
+          .olvido-password {
+            font-size: 11px;
+          }
+        }
       }
     }
   }
