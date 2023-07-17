@@ -1,7 +1,5 @@
 html {
   box-sizing: border-box;
-  /*
-  font-size: 62.5%;*/
 }
 
 *,
@@ -35,21 +33,23 @@ section .color:nth-child(1) {
   top: -350px;
   background: #5c55e6;
   width: 700px;
-  height: 900px;
+  height: 700px;
 }
 section .color:nth-child(2) {
   bottom: -150px;
-  left: 250px;
+  left: 100px;
   background: #4b1c8b;
   width: 800px;
   height: 800px;
+  display: block;
 }
 section .color:nth-child(3) {
-  bottom: 120px;
-  right: 200px;
+  bottom: 50px;
+  right: 0;
   background: #001f6a;
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
+  display: block;
 }
 section .box {
   position: relative;
@@ -187,6 +187,53 @@ section .box .container .form .olvido-password a {
   font-weight: 600;
 }
 
+@media (min-width: 300px) and (max-width: 768px) {
+  body {
+    margin: 0 20px;
+  }
+  section .color:nth-child(1) {
+    width: 100%;
+    height: 100%;
+  }
+  section .color:nth-child(2) {
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  section .color:nth-child(3) {
+    width: 100%;
+    height: 100%;
+  }
+  section .box .cuadrado {
+    content: "";
+  }
+  section .box .cuadrado:nth-child(1) {
+    top: 0px;
+    right: 0px;
+  }
+  section .box .cuadrado:nth-child(2) {
+    display: none;
+  }
+  section .box .cuadrado:nth-child(3) {
+    display: none;
+  }
+  section .box .cuadrado:nth-child(5) {
+    left: 25px;
+  }
+  section .box .container {
+    width: 100%;
+  }
+  section .box .container .form .input-box {
+    display: flex;
+    justify-content: center;
+  }
+  section .box .container .form .input-box input[type=submit] {
+    max-width: 100%;
+  }
+  section .box .container .form .olvido-password {
+    font-size: 11px;
+  }
+}
 @keyframes animate {
   0%, 100% {
     transform: translateY(-40px);
