@@ -9,6 +9,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: "system-ui", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -56,16 +57,6 @@ main .banner::before {
   z-index: 1000;
   background: linear-gradient(to top, #111, transparent);
 }
-main .banner .fitBg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0.8;
-}
 main .banner .content {
   position: relative;
   z-index: 10000;
@@ -90,38 +81,13 @@ main .about {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 main .about .content-box {
   min-width: 50%;
   width: 50%;
   text-align: end;
   padding-right: 40px;
-}
-main .about .content-box .title-text {
-  font-weight: 600;
-  color: #fafaf5;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-main .about .content-box .text {
-  color: #fafaf5;
-  font-size: 1em;
-}
-main .about .content-box .img-box {
-  position: relative;
-  min-width: 50%;
-  width: 50%;
-  min-height: 500px;
-}
-main .about .content-box .img-box img {
-  border-radius: 15px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 main .banner2 {
   position: relative;
@@ -149,6 +115,60 @@ main .banner2::after {
   width: 100%;
   height: 400px;
   background: linear-gradient(to bottom, #111, transparent);
+}
+main .destination {
+  text-align: center;
+}
+main .destination .content {
+  text-align: center;
+}
+main .destination .destination-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+main .destination .destination-list:hover .box {
+  opacity: 0.2;
+}
+main .destination .destination-list .box {
+  position: relative;
+  min-width: 350px;
+  height: 480px;
+  background: #191919;
+  transition: 0.5s;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+main .destination .destination-list .box:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+main .destination .destination-list .box .img-box {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+main .destination .destination-list .box .content {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .destination .destination-list .box .content h3 {
+  color: #fafaf5;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+main .destination .destination-list .box .content h3 span {
+  color: #fafaf5;
+  font-size: 0.8em;
+  font-weight: 300;
+  opacity: 0.5;
 }
 main .banner3 {
   position: relative;
@@ -178,6 +198,37 @@ main .banner3::after {
   z-index: 1000;
   background: linear-gradient(to bottom, #111, transparent);
 }
+main .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .footer .sci {
+  position: relative;
+  display: flex;
+}
+main .footer .sci li {
+  list-style: none;
+}
+main .footer .sci li a {
+  text-decoration: none;
+  margin: 0 20px;
+}
+main .footer .sci li a img {
+  filter: invert(1);
+  max-width: 400px;
+}
+main .footer .copyright {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+}
+main .footer .copyright a {
+  color: #fafaf5;
+  text-decoration: none;
+}
 
 a.btn {
   position: relative;
@@ -188,4 +239,109 @@ a.btn {
   text-decoration: none;
   padding: 10px 30px;
   border-radius: 5px;
+}
+
+.title-text {
+  font-weight: 600;
+  color: #fafaf5;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: #fafaf5;
+  font-size: 1em;
+}
+
+.img-box {
+  position: relative;
+  min-width: 50%;
+  width: 50%;
+  min-height: 500px;
+}
+.img-box img {
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fitBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  main section {
+    padding: 40px;
+  }
+  main .banner .content h2 {
+    font-size: 2.5em;
+  }
+  main .banner .content p {
+    font-size: 1em;
+  }
+  main .about {
+    flex-direction: column;
+  }
+  main .about .content-box {
+    min-width: 100%;
+    width: 100%;
+    text-align: center;
+    padding-right: 0px;
+  }
+  main .about .img-box {
+    min-width: 10%;
+    width: 100%;
+    text-align: center;
+    padding-right: 0px;
+  }
+  main .destination .destination-list .box {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    height: 400px;
+    min-width: initial;
+  }
+  main .destination .destination-list .box .img-box {
+    height: 320px;
+  }
+  main .footer .sci li a img {
+    filter: invert(1);
+    max-width: 300px;
+  }
+  .img-box {
+    min-height: 250px;
+  }
+  .title-text {
+    font-size: 1.5em;
+  }
+  a.btn {
+    margin-bottom: 30px;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: goldenrod;
 }/*# sourceMappingURL=tourism_page.css.map */
